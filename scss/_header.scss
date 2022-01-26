@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    height: 65px;
+    background: #401F0F;
+    width: 100%;
+    .headerLogo {
+        img {
+            width: 140px;
+            height: 40px;
+        }
+    }
+    .headerMenu {
+        ul {
+            display: flex;
+            li {
+                &:first-child {
+                    a {color: #FFCE11;}
+                }
+                a {
+                    text-decoration: none;
+                    color: #A7BCCD;
+                    display: block;
+                    padding: .5em;
+                    font-size: .9em;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
